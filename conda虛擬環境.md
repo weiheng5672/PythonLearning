@@ -28,3 +28,39 @@ base                  *  C:\ProgramData\anaconda3
 
 ### 總結：
 使用者執行了 `conda env list` 來檢視系統上已存在的 Conda 環境，結果顯示目前只有一個名為 `base` 的環境，並且該環境已被啟用。
+
+
+
+# 在專案資料夾中打開 **Conda Prompt**
+
+1. **使用檔案總管打開專案資料夾**：首先，進入你的專案資料夾。
+   
+2. **打開 Conda Prompt**：
+   - 在專案資料夾內，按住 `Shift` 鍵並右鍵點擊資料夾空白處。
+   - 選擇「在此處開啟命令視窗」或「在此處開啟 PowerShell 視窗」。
+   - 然後輸入 `conda activate` 來啟動 Conda 環境，或者可以直接輸入 `conda env create -f environment.yml` 來創建環境。
+
+或者，你也可以直接在 **Anaconda Prompt** 中使用 `cd` 命令進入專案資料夾，再執行指令。
+
+這樣，你就可以在專案資料夾內打開 Conda Prompt 並運行相關命令了。
+
+# 根據 `environment.yml` 的設定創建環境
+
+`conda env create -f environment.yml` 這段指令是在 **Conda Prompt** 中輸入的。
+
+這個指令會告訴 Conda 根據 `environment.yml` 檔案中的設定來創建一個新的虛擬環境，並安裝檔案中列出的所有依賴包。執行後，Conda 會讀取 `environment.yml` 檔案，並根據其中的內容創建環境並安裝相關的包。
+
+操作步驟：
+1. 打開 **Conda Prompt**（你可以在開始菜單中找到 "Anaconda Prompt"）。
+2. 使用 `cd` 命令導航到 `environment.yml` 檔案所在的目錄。
+3. 執行指令：
+   ```bash
+   conda env create -f environment.yml
+   ```
+
+這樣 Conda 就會開始根據 `environment.yml` 的設定創建環境，安裝所有必要的包。
+
+
+
+
+
