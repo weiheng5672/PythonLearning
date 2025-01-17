@@ -1,5 +1,16 @@
 
+# 太常使用，拿到前頭
 
+## 匯出專案的 `environment.yml` 檔案
+完成環境的配置後，可以用以下命令導出環境
+```
+conda env export --name 專案環境名稱 > environment.yml
+```
+
+## 根據 `environment.yml` 的設定創建環境
+```
+conda env create -f environment.yml
+```
 
 ```
 (base) PS C:\Users\673929> conda env list
