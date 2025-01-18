@@ -21,7 +21,10 @@ C:\ProgramData\Anaconda3\scripts
 
 由於 Anaconda 是開源軟件，每台電腦的環境可能有所不同。不是所有的電腦在安裝 Anaconda 後都能成功自動設置好上述行為。
 
-如果發現進入 CMD 或 PowerShell 後，並未預設在 **base 環境**，此時需要手動進行環境變數的設定。
+1. 有時在cmd可以，但PowerShell不行
+2. 重開機或者透過conda prompt執行`conda init`
+
+總之有各種情況，發現進入 CMD 或 PowerShell 後，並未預設在 **base 環境**，此時需要手動進行環境變數的設定。
 
 ### 建議的解決方案
 
