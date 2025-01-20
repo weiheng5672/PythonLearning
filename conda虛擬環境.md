@@ -1,6 +1,16 @@
 
 # 太常使用，拿到前頭
 
+
+## 1. **建立新的 Conda 環境**
+首先，打開終端，創建一個新的 Conda 環境：
+```bash
+  conda create --name pypsa_env python=3.9
+```
+- `project_env` 是環境名稱，你可以根據需求替換它。
+- 指定 Python 版本為 3.9（也可以選擇其他版本）。
+
+
 ## 匯出專案的 `environment.yml` 檔案
 完成環境的配置後，可以用以下命令導出環境
 ```
