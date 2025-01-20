@@ -39,13 +39,13 @@ print("Hello, World!")
 當你需要進行矩陣運算時，Python 的內建功能並不足夠，你需要引入像 `numpy` 這樣的第三方庫。
 
 - **上層**：你撰寫的有關矩陣運算的程式，例如：
-  ```python
-  import numpy as np
-  a = np.array([[1, 2], [3, 4]])
-  b = np.array([[5, 6], [7, 8]])
-  result = np.dot(a, b)
-  print(result)
-  ```
+```python
+import numpy as np
+a = np.array([[1, 2], [3, 4]])
+b = np.array([[5, 6], [7, 8]])
+result = np.dot(a, b)
+print(result)
+```
   這些程式碼直接描述了矩陣運算的邏輯。
 
 - **底層**：Python 解釋器與 `numpy` 庫共同支撐了這些邏輯的運行。
